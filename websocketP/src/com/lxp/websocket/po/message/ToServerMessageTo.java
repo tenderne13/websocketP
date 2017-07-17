@@ -49,4 +49,12 @@ public class ToServerMessageTo {
     private String sign;
     private String type;
     private String name;
+	@Override
+	public String toString() {
+		return "ToServerMessageTo [id=" + id + ", avatar=" + avatar + ", sign="
+				+ sign + ", type=" + type + ", name=" + name + "]";
+	}
+    
+    
+    
 }

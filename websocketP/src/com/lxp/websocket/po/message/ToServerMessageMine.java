@@ -40,4 +40,11 @@ public class ToServerMessageMine {
     private int id;
     private String content;
     private String username;
+	@Override
+	public String toString() {
+		return "ToServerMessageMine [avatar=" + avatar + ", id=" + id
+				+ ", content=" + content + ", username=" + username + "]";
+	}
+    
+    
 }

@@ -10,6 +10,52 @@ package com.lxp.websocket.po.message;
  * Created by pz on 16/11/23.
  */
 public class ToClientTextMessage {
+    
+
+    private String username;
+    private int id;
+    private int cid;
+    private int fromid;
+    private boolean mine;
+    private String type;
+    private String content;
+    private long timestamp;
+    private String avatar;
+    
+    
+    
+    public int getCid() {
+		return cid;
+	}
+
+	public void setCid(int cid) {
+		this.cid = cid;
+	}
+
+	public boolean isMine() {
+		return mine;
+	}
+
+	public void setMine(boolean mine) {
+		this.mine = mine;
+	}
+
+	public int getFromid() {
+		return fromid;
+	}
+
+	public void setFromid(int fromid) {
+		this.fromid = fromid;
+	}
+
+	public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
+
     public String getUsername() {
         return username;
     }
@@ -50,31 +96,14 @@ public class ToClientTextMessage {
         this.timestamp = timestamp;
     }
 
-    private String username;
-    private int id;
-    private String type;
-    private String content;
-    private long timestamp;
+	@Override
+	public String toString() {
+		return "ToClientTextMessage [username=" + username + ", id=" + id
+				+ ", fromid=" + fromid + ", type=" + type + ", content="
+				+ content + ", timestamp=" + timestamp + ", avatar=" + avatar
+				+ "]";
+	}
 
-    public String getAvatar() {
-        return avatar;
-    }
-
-    public void setAvatar(String avatar) {
-        this.avatar = avatar;
-    }
-
-    private String avatar;
-
-    @Override
-    public String toString() {
-        return "ToClientTextMessage{" +
-                "username='" + username + '\'' +
-                ", id=" + id +
-                ", type='" + type + '\'' +
-                ", content='" + content + '\'' +
-                ", timestamp=" + timestamp +
-                ", avatar='" + avatar + '\'' +
-                '}';
-    }
+    
+    
 }
