@@ -16,7 +16,7 @@ public class LxpWebSocketHandler implements WebSocketHandler{
 	}
 
 	@Override
-	public void afterConnectionEstablished(WebSocketSession arg0)
+	public void afterConnectionEstablished(WebSocketSession session)
 			throws Exception {
 		
 	}
