@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
     <wb-module deploy-name="websocketP">
-        <wb-resource deploy-path="/" source-path="/target/m2e-jee/web-resources"/>
-        <wb-resource deploy-path="/" source-path="/WebRoot" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/config"/>
-        <property name="context-root" value="websocketP"/>
+        <wb-resource deploy-path="/" source-path="/WebRoot"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
         <property name="java-output-path" value="/websocketP/WebRoot/WEB-INF/classes"/>
+        <property name="context-root" value="/websocketP"/>
     </wb-module>
 </project-modules>

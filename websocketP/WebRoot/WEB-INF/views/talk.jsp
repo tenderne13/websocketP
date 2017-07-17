@@ -10,7 +10,7 @@ String basePath = request.getServerName()+":"+request.getServerPort()+path+"/";
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>websocket聊天</title>
+<title>websocket聊天awdawdawd</title>
 <link rel="stylesheet" href="${ctx}/static/layui/css/layui.css"/>
 <script type="text/javascript" src="${ctx}/static/jquery/jquery-1.9.1.min.js"></script>
  <script type="text/javascript" src="${ctx}/static/layui/layui.js"></script>
@@ -72,7 +72,7 @@ String basePath = request.getServerName()+":"+request.getServerPort()+path+"/";
             }
         },
         handleMessage:function (msg) {
-        	alert(msg);
+        	//layer.alert(msg);
             var msg = JSON.parse(msg);
             console.log(msg);
             switch (msg.type){

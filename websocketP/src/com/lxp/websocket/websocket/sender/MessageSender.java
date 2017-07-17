@@ -124,8 +124,10 @@ public class MessageSender {
         } else {
         	toClientTextMessage.setMine(false);
         	toClientTextMessage.setCid(0);
-            toClientTextMessage.setId(message.getTo().getId());
-            toClientTextMessage.setFromid(mine.getId());
+            //toClientTextMessage.setId(message.getTo().getId());
+            //toClientTextMessage.setFromid(mine.getId());
+        	toClientTextMessage.setId(mine.getId());
+        	toClientTextMessage.setFromid(message.getTo().getId());
         }
         toClientTextMessage.setTimestamp(new Date().getTime());
 
