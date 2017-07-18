@@ -133,41 +133,6 @@ public class ChatController {
 	}
 	
 	public static void main(String[] args) {
-		BaseDataResult dataResult=new BaseDataResult();
-		StatusUser mine1=new StatusUser();
-		mine1.setId(1);
-		mine1.setUsername("李小朋");
-		mine1.setAvatar("https://avatars7.githubusercontent.com/u/28944859?v=4&s=460");
 		
-		StatusUser mine2=new StatusUser();
-		mine2.setId(2);
-		mine2.setUsername("贾欣琪");
-		mine2.setAvatar("http://tva1.sinaimg.cn/crop.0.0.540.540.180/89b4acf3jw8enzkd2ld8zj20f00f0aao.jpg");
-		
-		//dataResult.setMine();
-		
-		List<FriendGroup> friend=new ArrayList<FriendGroup>();
-		
-		FriendGroup group1 = new FriendGroup();
-		group1.setId(1);
-		group1.setOnline(1);
-		group1.setGroupname("女神");
-		
-		
-		List<User> userList1=new ArrayList<User>();
-		
-		User user1=new User();
-		user1.setId(2);
-		user1.setUsername("贾欣琪");
-		user1.setAvatar("http://tva1.sinaimg.cn/crop.0.0.540.540.180/89b4acf3jw8enzkd2ld8zj20f00f0aao.jpg");
-		userList1.add(user1);
-		group1.setList(userList1);
-		friend.add(group1);
-		
-		
-		dataResult.setMine(mine1);
-		dataResult.setFriend(friend);
-		
-		System.out.println(JSON.toJSONString(dataResult));
 	}
 }

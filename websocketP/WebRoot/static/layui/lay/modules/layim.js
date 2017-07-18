@@ -521,8 +521,6 @@ layui.define(['layer',
             base: j.base,
             local: j.local
         };
-        console.log(j);
-        console.log(l);
         if (!i.id) return t.msg('非法用户');
         if (a[0]) {
             var s = w.find('.layim-chat-list'),

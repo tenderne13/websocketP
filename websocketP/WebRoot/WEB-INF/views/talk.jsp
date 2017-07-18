@@ -37,8 +37,8 @@ String basePath = request.getServerName()+":"+request.getServerPort()+path+"/";
             if ('WebSocket' in window){
                 var uid = im.getUid();
                 if(!uid){
-                    console.log('当前用户未登陆，应该跳到login');
-                    alert("当前用户未登录");
+                    alert("您未登录！");
+                    window.location.href='${ctx}';
                 }else {
                     var socketUrl = 'ws://'+path+'/chat?uid='+ uid;
                     socket = new WebSocket(socketUrl);
@@ -63,19 +63,17 @@ String basePath = request.getServerName()+":"+request.getServerPort()+path+"/";
                 socket.onmessage = function (event) {
                     console.log("接收到消息");
                     im.handleMessage(event.data);
-                    console.log(layim.cache());
                 }
                 // 连接关闭的回调方法
                 socket.onclose = function () {
                     console.log("关闭连接！!");
-                    layer.msg("该用户在其他地点登录或者服务器异常");
+                    alert("异地登录");
+                    window.location.href='${ctx}';
                 }
             }
         },
         handleMessage:function (msg) {
-        	//layer.alert(msg);
             var msg = JSON.parse(msg);
-            console.log(msg);
             switch (msg.type){
                 case 'TYPE_TEXT_MESSAGE':
                     layim.getMessage(msg.msg);
@@ -125,6 +123,8 @@ String basePath = request.getServerName()+":"+request.getServerPort()+path+"/";
       //,isfriend: false //是否开启好友
       //,isgroup: false //是否开启群组
       //,min: true //是否始终最小化主面板（默认false）
+      ,title:'我的通讯工具'
+      ,notice:true
       ,chatLog: './demo/chatlog.html' //聊天记录地址
       ,find: './demo/find.html'
       ,copyright: true //是否授权
@@ -134,7 +134,6 @@ String basePath = request.getServerName()+":"+request.getServerPort()+path+"/";
     //监听发送消息
     layim.on('sendMessage', function(data){
 
-        console.log(data);
         var msg = JSON.stringify(data);
         socket.send(msg);
     });
