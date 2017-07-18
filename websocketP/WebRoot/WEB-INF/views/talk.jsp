@@ -63,6 +63,7 @@ String basePath = request.getServerName()+":"+request.getServerPort()+path+"/";
                 socket.onmessage = function (event) {
                     console.log("接收到消息");
                     im.handleMessage(event.data);
+                    console.log(layim.cache());
                 }
                 // 连接关闭的回调方法
                 socket.onclose = function () {

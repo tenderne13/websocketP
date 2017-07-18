@@ -75,18 +75,18 @@ public class ChatController {
 		StatusUser mine2=new StatusUser();
 		mine2.setId(2);
 		mine2.setUsername("贾欣琪");
-		mine2.setAvatar("https://avatars7.githubusercontent.com/u/28944859?v=4&s=460");
+		mine2.setAvatar("http://tva1.sinaimg.cn/crop.0.0.540.540.180/89b4acf3jw8enzkd2ld8zj20f00f0aao.jpg");
 		
 		
 		List<FriendGroup> friend=new ArrayList<FriendGroup>();
 		
 		FriendGroup group1 = new FriendGroup();
-		group1.setId(1);
+		group1.setId(1001);
 		group1.setOnline(1);
 		group1.setGroupname("女神");
 		
 		FriendGroup group2 = new FriendGroup();
-		group2.setId(1);
+		group2.setId(1002);
 		group2.setOnline(1);
 		group2.setGroupname("男神");
 		
@@ -98,7 +98,7 @@ public class ChatController {
 		User user1=new User();
 		user1.setId(2);
 		user1.setUsername("贾欣琪");
-		user1.setAvatar("https://avatars7.githubusercontent.com/u/28944859?v=4&s=460");
+		user1.setAvatar("http://tva1.sinaimg.cn/crop.0.0.540.540.180/89b4acf3jw8enzkd2ld8zj20f00f0aao.jpg");
 		
 		User user2=new User();
 		user2.setId(1);
@@ -142,7 +142,7 @@ public class ChatController {
 		StatusUser mine2=new StatusUser();
 		mine2.setId(2);
 		mine2.setUsername("贾欣琪");
-		mine2.setAvatar("https://avatars7.githubusercontent.com/u/28944859?v=4&s=460");
+		mine2.setAvatar("http://tva1.sinaimg.cn/crop.0.0.540.540.180/89b4acf3jw8enzkd2ld8zj20f00f0aao.jpg");
 		
 		//dataResult.setMine();
 		
@@ -159,7 +159,7 @@ public class ChatController {
 		User user1=new User();
 		user1.setId(2);
 		user1.setUsername("贾欣琪");
-		user1.setAvatar("https://avatars7.githubusercontent.com/u/28944859?v=4&s=460");
+		user1.setAvatar("http://tva1.sinaimg.cn/crop.0.0.540.540.180/89b4acf3jw8enzkd2ld8zj20f00f0aao.jpg");
 		userList1.add(user1);
 		group1.setList(userList1);
 		friend.add(group1);
