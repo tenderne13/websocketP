@@ -19,6 +19,19 @@
 		<input name="password" type="text" value="123456">
 		<input type="submit" value="登录">
 	</form>
+	
+	<br>
+	手机端登录
+	<form action="api/mobileLogin" method="post">
+		用户名:
+		<select name="id">
+			<option value="1">男神</option>
+			<option value="2">女神</option>
+		</select><br>
+		密码:
+		<input name="password" type="text" value="123456">
+		<input type="submit" value="登录">
+	</form>
 </body>
 
 </html>

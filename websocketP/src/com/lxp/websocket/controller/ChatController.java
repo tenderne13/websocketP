@@ -58,6 +58,11 @@ public class ChatController {
 		return "talk";
 	}
 	
+	@RequestMapping(value="log",method=RequestMethod.GET)
+	public String log(){
+		return "log";
+	}
+	
 	//根据用户获得不同的列表
 	@RequestMapping("getList")
 	@ResponseBody
